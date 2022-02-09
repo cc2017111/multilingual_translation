@@ -1,0 +1,27 @@
+raw_data_path: /home/being/PycharmProjects/mRASP-master/experiments/example/data/raw/test
+merged_output_path: /home/being/PycharmProjects/mRASP-master/experiments/example/data/toy/test_data/en2ja
+output_main_path: /home/being/PycharmProjects/mRASP-master/experiments/example/data/toy/data/prep/test
+final_vocab_path: /home/being/PycharmProjects/mRASP-master/experiments/example/data/toy/vocab
+
+configs_subdir: configs
+cleaned_subdir: cleaned
+logs_subdir: logs
+vocab_subdir: vocab
+output_subdir: output
+preprocess_steps_list: clean:subword:merge
+file_prefix: dev
+learn: false
+subword_bpe_merge_ops: 32000
+pairs: en_ja
+directions: en2ja
+languages: en;ja
+default_pairs:
+  deduplicate: false
+  keep_lines_percent: '1.0'
+  shuffle: false
+default_langs:
+  do_normalize_punctuations: true
+  tokenizer: MosesTokenizer
+src: en
+trg: ja
+
